@@ -1,0 +1,60 @@
+*{
+    background-color: rgb(223, 103, 123);
+    /* border: solid 2px blue; */
+}
+header{
+    text-align: center;
+    font-size: 1.5em;
+}
+header h1{
+    color: white;
+}
+.intro p{
+    color: white;
+    font-size: 1em;
+}
+.intro{
+    text-align: center;
+}
+.pres-nel{
+    text-align: center;
+}
+.pres-nel p{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+}
+.list{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+.list p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+.quote{
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+.quote p{
+    font-size: 1.8em;
+    color: white;
+}
+footer{
+    width: 26%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer p{
+    font-size: 1em;
+    color: black;
+}
+img{
+    margin: 0 auto;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+}
