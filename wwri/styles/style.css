@@ -158,7 +158,7 @@ h4{
 
 .msg p{
     color: #19381f;
-    font-family: Georgia, sans-serif, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: .8em;
     padding-bottom: 15px;
 }
@@ -200,7 +200,7 @@ footer p a:hover {
 }
 
 .msg h2{
-    font-family: "Rock Salt", Roboto, Helvetica, sans-serif;
+    font-family: "Rock Salt", Roboto, sans-serif, Helvetica;
 }
 h2{
     margin: 0;
