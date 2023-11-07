@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <script>
+            function onwinerror() {
+                window.scriptloaderror = true;
+            }
+            
+            function checkforie() {
+                window.isIE = false;
+                var ua = window.navigator.userAgent;
+                var old_ie = ua.indexOf('MSIE ');
+                var ie_11 = ua.indexOf('Trident/');
+
+                if ((old_ie > -1) || (ie_11 > -1)) {
+                    window.isIE = true;
+                }
+            }
+            checkforie();
+            window.onerror = onwinerror
+        </script>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+        <link rel="icon" href="data:,"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
+        <noscript>
+          <link rel="stylesheet" href="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/25/css/react-header-and-footer/12.0.4/styles.css">
+        </noscript>
+        <style>
+        
+            @font-face {
+                font-family: Arial;
+                ascent-override: 70%;
+                descent-override: 30%;
+                line-gap-override: normal;
+                src: local(Arial); size-adjust=96.5%
+            }
+
+            .hidden {
+              display: none;
+            }
+            
+            .redirect-message {
+              text-align: left;
+              font-size: large;
+            }
+            
+            .tagline-message {
+                text-align: left;
+                font-size: medium;
+            }
+            
+            .centerdiv {           
+                font: normal normal 20px/1.4 nexussans, Arial, sans-serif;
+                margin: auto;
+                width: 85%;
+                border: 0px solid #FFFF11;
+                padding: 40px;
+            }
+            
+            .centerdiv h1 {
+                font-size: 32px;
+                line-height: 1.25;
+            }
+            
+            .centerdiv a {
+            }
+            
+            .centerdiv a,
+            .centerdiv a:link,
+            .centerdiv a:visited {
+                color: #007398;
+                transition: color 0.3s ease, border-bottom-color 0.3s ease;
+                text-decoration: none;
+                text-underline-position: under;
+            }
+            
+            .centerdiv a:active,
+            .centerdiv a:focus,
+            .centerdiv a:hover {
+                color: inherit;
+                text-decoration: 2px solid underline #eb6500;
+            }
+            
+            .centerdiv p {
+                margin: 16px 0;
+            }
+            
+            .centerdiv .details,
+            .centerdiv .tagline {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        </style>
+        <script>    
+          function isSubmitted() {
+              if (isDefined(window['turnstileComplete']) && window['turnstileComplete'] === true) {
+                  return true;
+              } else {
+                  return false;
+              }
+          }
+          
+          function isNotSubmitted() {
+              return !isSubmitted();
+          }
+        
+          function formSubmit()
+          {
+              if (isNotSubmitted()) {                
+                  window.turnstileComplete = true;
+                  var formEl = document.getElementById("form1")
+                  
+                  var input = document.createElement("input");
+                  input.setAttribute("type", "hidden");
+                  input.setAttribute("name", "CraftCapiRenderHostProtocol");
+                  input.setAttribute("value", Function('return ' + Function('return ' + 'atob("d2luZG9" + "3Lmxv" + "Y2F0aW9uLnByb3RvY29s")')())());
+                  formEl.appendChild(input);
+                  
+                  formEl.action = "/craft/capi/cfts/verify?s=1800&p=%2F308596%2F1-s2.0-S2352250X21X0005X%2F1-s2.0-S2352250X21001500%2Fmain.pdf&q=X-Amz-Security-Token%3DIQoJb3JpZ2luX2VjEEAaCXVzLWVhc3QtMSJGMEQCICz29co%252B7EPra%252B5TXIPdY3aNtN4EDF2LkkyXSwEIbtgEAiBnVOLPhduT7o%252BXQ6SWOEJWT%252BS0jwjZyrrKmc%252BWbmZ7WyqzBQh5EAUaDDA1OTAwMzU0Njg2NSIM6mJPd0TpZ8IoRMAeKpAFbugiX0cp9zM%252F1M2cTBm6W8Qy6%252BLXKRQlJI7hlEcLoFlYkZWxGtBGN4oXJ9y0GD5aT%252B9UaUj3buot9ic0xVg9nimZaoWf6djn5fh2xRF%252B%252BFg4MOeaj%252B94ziZk93DgEMohtb%252FtcoYP7Z1bHYmxt5BJhnz7UNQFcIEGiV6pubACedmN7hCgetOxKkH%252FQENULvzO1k7W7tvh3n5j%252FK5NjQGjwrl0Pv%252FpNumt8MCUnL%252FWk0UimCudUJ%252FwIIoeyF88HaYA8C1rwt%252FZ%252Fm744Bp8cpYbQMcTBu0WJQACGM9OH5qAaqHKSdJE6U7V12NiINcs4ViPUn4XXNhLFR5t8NmtYNb%252BV6rWAmm42%252Fzt8HTAICXJqpzmcYrnKcZWGp0e0OAb5gMZl%252B3mtpOgoTogCFq4LXAV7q4p055AetQTlYn9VdatNeYmGWwPUmrWWK7p9vYI%252B%252Fs2ghwAjGnfaLPM56WKu0xpXniBk7pLO4yDay4Anms2WbtbeZlGTyDz8RtnQ0mqq%252BbU5oc%252BWs76K5nbyhATY6zrN5FdgjPETfG8ZjcLpTEnj3NUVwRXXZfvNETRQbrvCGaOhNEEug2o8MWEXdVfM%252BeS00KVuWaadc16K49cXpR%252BLasDf1lECqd4pqJ%252F60gjLqWPdPVQl1sLSosxqXoHvZewo6cnLY99sZWJ7q1qCXTeQA3TD9Ks4ANzicIvZ1DMvBFhdU4NapRXeTRAf1GYqNOjq4GmbrDZ9%252F5R58ME3Xn8eATJedR8pyfeMhNUYuey5qT8oBoxjUi4Tif7Np5WshRgV50Xtgpx638uWMoje3iDB7uNffn9h0a07N1BJ61u08fdCXJFpIub2rgyJHuQsGSYBTN8udM%252B9WEZuQoyNB9OL24wqPeeqgY6sgH2MM0hwtkqDErEMWri%252FKyWidcjLK8jK3bCltDeENCQvjyWKIenWi3co3L%252FdQY5zkKJHyg01G2wZB1B1MfsPbKPRy6m%252Big7RSOyiAfifHQ6TIEzv874Z2s1%252BEOih9hfUQZK3AFOGHvRbOs7HExdj%252BaQ19kI5pLK24FqWbw9XFnF2eRE7qdaf%252BLBzQkdpgnkCIiOTd%252FTJFfawaWE32jcZmRGz0xfADH74ndWrrwwL4moQqRE%26X-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Date%3D20231105T172133Z%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Expires%3D300%26X-Amz-Credential%3DASIAQ3PHCVTY5Q2ZCAMU%252F20231105%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Signature%3Dae496d59d15303587d8abf070f7cf1f274589afdfd87dd50de98864fec23a652%26hash%3D6869efedb8321d614a60b23ec4e44d49ef5b80243c7a097a3698c8dc26675320%26host%3D68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61%26pii%3DS2352250X21001500%26tid%3Dspdf-59dcc68c-868e-4e5d-b373-100162cf41fd%26sid%3D4b873f122c2fd249d3784542bb9f5dd5e0cfgxrqa%26type%3Dclient%26tsoh%3Dd3d3LXNjaWVuY2VkaXJlY3QtY29tLmJ5dWkuaWRtLm9jbGMub3Jn%26ua%3D1317575050570c545353%26rr%3D8216c61629ad22c2%26cc%3Dus&i=2023-11-05T17%3A22%3A21.795Z&c=pdf_country_code_mismatch&r=8216c74619adb75e&u=https%3A%2F%2Fwww.sciencedirect.com%2F%3Fref%3Dpdf_download%26fr%3DRR-18%26rr%3D8216c74619adb75e&w=interactive&h=eyJrZXkiOiJ1R0NZR3p3YjVzUFVDNE1Ra2pGQXZCOTdjeHZQbzNxYjIxNkF5YWpQV3RPVFhoVk8xTG9zZUZ4TjQ5YmNBcEdIaTU2Ymd5dE5yTTY2Z1J3TUdDQjZwUlVLR3lXRzdvVDZoM0puQ0QxdXF3WT0iLCJpdiI6IjczNjU5NjY1MTc0YzM5ZTA4YWRkNmE0NzczYWNmNjRiIn0%3D";
+                  formEl.submit();
+              }
+          }
+        </script>
+    </head>
+    <body>
+        <noscript>
+            <iframe id="px" width="0" height="0" src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/1px.png?fr=cfts_njs&rr=8216c7477b86b75e" style="width: 0; height: 0; border: 0; border: none; position: absolute;"></iframe>            
+            <div class="challengenojs">
+                <div id="gh-main-cnt" class="u-flex-center-ver u-position-relative u-padding-s-hor u-padding-m-hor-from-sm u-padding-l-hor-from-lg"><a id="gh-branding" class="u-flex-center-ver" href="/" aria-label="Science Direct home page" data-aa-region="header" data-aa-name="ScienceDirect"><img class="gh-logo lazyimg" loading="lazy" src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/elsevier-non-solus-new-grey.svg" alt="Elsevier logo" height="48" width="54"/><img class="lazyimg" loading="lazy" src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-sciencedirect.svg" height="30" width="138" alt="Science Direct Home Page" class="gh-wordmark u-margin-s-left"></a></div><div id="gh-overlay" class="u-overlay u-display-none" role="button" tabindex="-1"></div>
+                <div class="centerdiv redirect-message">
+                    <h1 class="title">JavaScript is disabled on your browser</h1> 
+                    <p class="tagline">Please turn JavaScript on and reload the page.</p>       
+                    <p>
+                      If you have a problem accessing your content please click
+                      <a href="/308596/1-s2.0-S2352250X21X0005X/1-s2.0-S2352250X21001500/main.pdf?ref=craft_challenge&fr=RR-CW-13&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEAaCXVzLWVhc3QtMSJGMEQCICz29co%2B7EPra%2B5TXIPdY3aNtN4EDF2LkkyXSwEIbtgEAiBnVOLPhduT7o%2BXQ6SWOEJWT%2BS0jwjZyrrKmc%2BWbmZ7WyqzBQh5EAUaDDA1OTAwMzU0Njg2NSIM6mJPd0TpZ8IoRMAeKpAFbugiX0cp9zM%2F1M2cTBm6W8Qy6%2BLXKRQlJI7hlEcLoFlYkZWxGtBGN4oXJ9y0GD5aT%2B9UaUj3buot9ic0xVg9nimZaoWf6djn5fh2xRF%2B%2BFg4MOeaj%2B94ziZk93DgEMohtb%2FtcoYP7Z1bHYmxt5BJhnz7UNQFcIEGiV6pubACedmN7hCgetOxKkH%2FQENULvzO1k7W7tvh3n5j%2FK5NjQGjwrl0Pv%2FpNumt8MCUnL%2FWk0UimCudUJ%2FwIIoeyF88HaYA8C1rwt%2FZ%2Fm744Bp8cpYbQMcTBu0WJQACGM9OH5qAaqHKSdJE6U7V12NiINcs4ViPUn4XXNhLFR5t8NmtYNb%2BV6rWAmm42%2Fzt8HTAICXJqpzmcYrnKcZWGp0e0OAb5gMZl%2B3mtpOgoTogCFq4LXAV7q4p055AetQTlYn9VdatNeYmGWwPUmrWWK7p9vYI%2B%2Fs2ghwAjGnfaLPM56WKu0xpXniBk7pLO4yDay4Anms2WbtbeZlGTyDz8RtnQ0mqq%2BbU5oc%2BWs76K5nbyhATY6zrN5FdgjPETfG8ZjcLpTEnj3NUVwRXXZfvNETRQbrvCGaOhNEEug2o8MWEXdVfM%2BeS00KVuWaadc16K49cXpR%2BLasDf1lECqd4pqJ%2F60gjLqWPdPVQl1sLSosxqXoHvZewo6cnLY99sZWJ7q1qCXTeQA3TD9Ks4ANzicIvZ1DMvBFhdU4NapRXeTRAf1GYqNOjq4GmbrDZ9%2F5R58ME3Xn8eATJedR8pyfeMhNUYuey5qT8oBoxjUi4Tif7Np5WshRgV50Xtgpx638uWMoje3iDB7uNffn9h0a07N1BJ61u08fdCXJFpIub2rgyJHuQsGSYBTN8udM%2B9WEZuQoyNB9OL24wqPeeqgY6sgH2MM0hwtkqDErEMWri%2FKyWidcjLK8jK3bCltDeENCQvjyWKIenWi3co3L%2FdQY5zkKJHyg01G2wZB1B1MfsPbKPRy6m%2Big7RSOyiAfifHQ6TIEzv874Z2s1%2BEOih9hfUQZK3AFOGHvRbOs7HExdj%2BaQ19kI5pLK24FqWbw9XFnF2eRE7qdaf%2BLBzQkdpgnkCIiOTd%2FTJFfawaWE32jcZmRGz0xfADH74ndWrrwwL4moQqRE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231105T172133Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY5Q2ZCAMU%2F20231105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ae496d59d15303587d8abf070f7cf1f274589afdfd87dd50de98864fec23a652&hash=6869efedb8321d614a60b23ec4e44d49ef5b80243c7a097a3698c8dc26675320&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S2352250X21001500&tid=spdf-59dcc68c-868e-4e5d-b373-100162cf41fd&sid=4b873f122c2fd249d3784542bb9f5dd5e0cfgxrqa&type=client&tsoh=d3d3LXNjaWVuY2VkaXJlY3QtY29tLmJ5dWkuaWRtLm9jbGMub3Jn&ua=1317575050570c545353&rr=8216c61629ad22c2&cc=us">here</a> 
+                      to try again.<br/>Or contact our
+                      <a href="//service.elsevier.com/app/contact/supporthub/sciencedirect">support team</a> 
+                      who will be happy to help.<br/>
+                    </p>
+                    <p>Please supply the following details:</p>
+                    <div class="details">
+                      <strong>Request ID:</strong> 8216c7477b86b75e<br/>
+                      <strong>IP:</strong> 102.90.45.141<br/>
+                      <strong>UTC time</strong>: 2023-11-05T17:22:22.027Z<br/>
+                      <strong>Browser</strong>: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0<br/>
+                      <div id="clienterror" class="hidden"></div>
+                   </div>
+                </div>
+                <footer>
+                    <div id="footer">
+                        <div class="hor-line" style="border-color:#e9711c"></div><div class="panel-s u-padding-l-bottom u-bg-white u-clr-grey7" role="contentinfo"><a class="anchor move-left els-footer-elsevier anchor-has-inherit-color" href="https://www.elsevier.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-elsevier.svg" height="30" width="104" alt="Elsevier"></span></a><div class="panel-s u-bg-white u-padding-0-hor-from-xs u-padding-s-hor-from-md u-padding-xs-ver text-xs u-clear-both-from-xs u-clear-none-from-md"><p class="u-margin-xs-bottom"><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/solutions/sciencedirect" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">About ScienceDirect</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://sd-cart.elsevier.com/?" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Shopping cart</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://service.elsevier.com/app/contact/supporthub/sciencedirect/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Contact and support</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/elsevier-website-terms-and-conditions" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Terms and conditions</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/privacy-policy" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Privacy policy</span></a></p><p id="els-footer-cookie-message">We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the<!-- --> <a class="anchor u-margin-0-right" href="https://www.sciencedirect.com/legal/use-of-cookies" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">use of cookies</span></a>.</p><p id="els-footer-copyright">Copyright © <!-- -->2020<!-- --> Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.</p></div><div><span style="margin-top:-10px" class="u-position-relative move-bottom u-float-left-from-xs u-float-right-from-md move-right u-padding-0-hor"><a class="anchor els-footer-relx anchor-has-inherit-color" href="https://www.relx.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-relx-group.svg" height="28" width="118" alt="RELX group home page"></span></a></span></div></div>
+                    </div>
+                </footer>
+            </div>                  
+        </noscript>
+        <div class="challenge">
+            <div id="gh-main-cnt" class="u-flex-center-ver u-position-relative u-padding-s-hor u-padding-m-hor-from-sm u-padding-l-hor-from-lg"><a id="gh-branding" class="u-flex-center-ver" href="/" aria-label="Science Direct home page" data-aa-region="header" data-aa-name="ScienceDirect"><img class="gh-logo lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/elsevier-non-solus-new-grey.svg" alt="Elsevier logo" height="48" width="54"/><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-sciencedirect.svg" height="30" width="138" alt="Science Direct Home Page" class="gh-wordmark u-margin-s-left"></a></div><div id="gh-overlay" class="u-overlay u-display-none" role="button" tabindex="-1"></div>
+            <div class="centerdiv redirect-message">
+                <h1 class="title">Request Verification In Progress</h1>
+                <img class="lazyimg" loading="lazy" id="failedcschallpx" width="0" height="0" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/88/images/1px.png?fr=cfts_failedcs&rr=8216c7477b86b75e" style="width: 0; height: 0; border: 0; border: none; position: absolute;"></img>         
+                <p class="tagline">
+                <p id="browsersupport" class="hidden">Your browser may not be supported</p>
+                <form id="form1" class="captcha-form" action="#" method="POST" enctype="multipart/form-data">
+                    <br />
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAIJB5yGm8wJK_4V" data-callback="formSubmit"></div>
+                    <div id="turnstileForm"></div>
+                </form>
+                </p>         
+                <p>
+                  If you have a problem accessing your content please click
+                  <a href="https://www.sciencedirect.com/?ref=pdf_download&fr=RR-18&rr=8216c74619adb75e?ref=craft_challenge&fr=RR-CW-15">here</a> 
+                  to try again.<br/>Or contact our
+                  <a href="//service.elsevier.com/app/contact/supporthub/sciencedirect">support team</a> 
+                  who will be happy to help.<br/>
+                </p>
+                <p>Please supply the following details:</p>
+                <div class="details">
+                  <strong>Request ID:</strong> 8216c7477b86b75e<br/>
+                  <strong>IP:</strong> 102.90.45.141<br/>
+                  <strong>UTC time</strong>: 2023-11-05T17:22:22.027Z<br/>
+                  <strong>Browser</strong>: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0<br/>
+                  <div id="clienterror" class="hidden"></div>
+                  <div id="errstack" class="hidden"><strong class="error">Error Encountered</strong>: <span class="browsererror"></span><br/>
+                    <img class="lazyimg" loading="lazy" id="errorchallpx" width="0" height="0" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/88/images/1px.png?fr=cfts_error_failedcs&rr=8216c7477b86b75e" style="width: 0; height: 0; border: 0; border: none; position: absolute;"></img>
+                    <img class="lazyimg" loading="lazy" id="initerrorchallpx" width="0" height="0" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/88/images/1px.png?fr=cfts_initerror&rr=8216c7477b86b75e" style="width: 0; height: 0; border: 0; border: none; position: absolute;"></img>
+                  </div>
+               </div>
+            </div>
+            <footer>
+                <div id="footer">
+                    <div class="hor-line" style="border-color:#e9711c"></div><div class="panel-s u-padding-l-bottom u-bg-white u-clr-grey7" role="contentinfo"><a class="anchor move-left els-footer-elsevier anchor-has-inherit-color" href="https://www.elsevier.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-elsevier.svg" height="30" width="104" alt="Elsevier"></span></a><div class="panel-s u-bg-white u-padding-0-hor-from-xs u-padding-s-hor-from-md u-padding-xs-ver text-xs u-clear-both-from-xs u-clear-none-from-md"><p class="u-margin-xs-bottom"><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/solutions/sciencedirect" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">About ScienceDirect</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://sd-cart.elsevier.com/?" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Shopping cart</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://service.elsevier.com/app/contact/supporthub/sciencedirect/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Contact and support</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/elsevier-website-terms-and-conditions" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Terms and conditions</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/privacy-policy" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Privacy policy</span></a></p><p id="els-footer-cookie-message">We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the<!-- --> <a class="anchor u-margin-0-right" href="https://www.sciencedirect.com/legal/use-of-cookies" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">use of cookies</span></a>.</p><p id="els-footer-copyright">Copyright © <!-- -->2020<!-- --> Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.</p></div><div><span style="margin-top:-10px" class="u-position-relative move-bottom u-float-left-from-xs u-float-right-from-md move-right u-padding-0-hor"><a class="anchor els-footer-relx anchor-has-inherit-color" href="https://www.relx.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-relx-group.svg" height="28" width="118" alt="RELX group home page"></span></a></span></div></div>
+                </div>
+            </footer>
+        </div>        
+        <div id='oldbrowserproblem' class="oldbrowserproblem hidden">
+          <div id="gh-main-cnt" class="u-flex-center-ver u-position-relative u-padding-s-hor u-padding-m-hor-from-sm u-padding-l-hor-from-lg"><a id="gh-branding" class="u-flex-center-ver" href="/" aria-label="Science Direct home page" data-aa-region="header" data-aa-name="ScienceDirect"><img class="lazyimg gh-logo" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/elsevier-non-solus-new-grey.svg" alt="Elsevier logo" height="48" width="54"/><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-sciencedirect.svg" height="30" width="138" alt="Science Direct Home Page" class="gh-wordmark u-margin-s-left"/></a></div><div id="gh-overlay" class="u-overlay u-display-none" role="button" tabindex="-1"></div>
+          <div class="centerdiv redirect-message">
+            <img class="lazyimg" loading="lazy" id="oldchallpx" width="0" height="0" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/88/images/1px.png?fr=cfts_old&rr=8216c7477b86b75e" style="width: 0; height: 0; border: 0; border: none; position: absolute;"></img>
+            <h1 class="title">Your Browser is out of date.</h1>
+            <p>
+              Click <a href="https://service.elsevier.com/app/answers/detail/a_id/9831/supporthub/sciencedirect/">here</a> to view the supported browsers.
+              <br/>Or contact our
+              <a href="//service.elsevier.com/app/contact/supporthub/sciencedirect">support team</a> who will be happy to help.<br/>
+              Or click <a href="https://www.sciencedirect.com/?ref=pdf_download&fr=RR-18&rr=8216c74619adb75e?ref=craft_challenge&fr=RR-CW-14">here</a> to try again.<br/>
+            </p>
+            <p>Please supply the following details:</p>
+            <div class="details">
+              <strong>Request ID:</strong> 8216c7477b86b75e<br/>
+              <strong>IP:</strong> 102.90.45.141<br/>
+              <strong>UTC time</strong>: 2023-11-05T17:22:22.027Z<br/>
+              <strong>Browser</strong>: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0<br/>
+            </div>
+          </div>
+          <footer>
+            <div id="footer">
+              <div class="hor-line" style="border-color:#e9711c"></div><div class="panel-s u-padding-l-bottom u-bg-white u-clr-grey7" role="contentinfo"><a class="anchor move-left els-footer-elsevier anchor-has-inherit-color" href="https://www.elsevier.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-elsevier.svg" height="30" width="104" alt="Elsevier"></span></a><div class="panel-s u-bg-white u-padding-0-hor-from-xs u-padding-s-hor-from-md u-padding-xs-ver text-xs u-clear-both-from-xs u-clear-none-from-md"><p class="u-margin-xs-bottom"><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/solutions/sciencedirect" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">About ScienceDirect</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://sd-cart.elsevier.com/?" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Shopping cart</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://service.elsevier.com/app/contact/supporthub/sciencedirect/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Contact and support</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/elsevier-website-terms-and-conditions" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Terms and conditions</span></a><wbr><a class="anchor u-margin-xs-right u-margin-s-right-from-sm u-margin-l-right-from-md anchor-has-inherit-color" href="https://www.elsevier.com/legal/privacy-policy" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">Privacy policy</span></a></p><p id="els-footer-cookie-message">We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the<!-- --> <a class="anchor u-margin-0-right" href="https://www.sciencedirect.com/legal/use-of-cookies" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text">use of cookies</span></a>.</p><p id="els-footer-copyright">Copyright © <!-- -->2020<!-- --> Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.</p></div><div><span style="margin-top:-10px" class="u-position-relative move-bottom u-float-left-from-xs u-float-right-from-md move-right u-padding-0-hor"><a class="anchor els-footer-relx anchor-has-inherit-color" href="https://www.relx.com/" rel="nofollow" target="_blank" style="white-space:nowrap"><span class="anchor-text"><img class="lazyimg" loading="lazy" data-src="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/67/images/wordmark-relx-group.svg" height="28" width="118" alt="RELX group home page"></span></a></span></div></div>
+            </div>
+          </footer>
+        </div>
+
+        <script>
+            function unhideImages() {
+              var images = document.getElementsByClassName("lazyimg");
+              for (var i = 0; i < images.length; i++) {
+                if (
+                    images[i].id !== "failedcschallpx" && 
+                    images[i].id !== "oldchallpx"  && 
+                    images[i].id !== "errorchallpx" &&
+                    images[i].id !== "initerrorchallpx" 
+                    ) { 
+                    var imagelink = images[i].getAttribute("data-src");
+                    images[i].setAttribute("src", imagelink);
+                }
+              }
+            }
+            
+            function unhideSpecificImage(id) {
+                var images = document.getElementsByClassName("lazyimg");
+                for (var i = 0; i < images.length; i++) {
+                    if (images[i].id === id) { 
+                        var imagelink = images[i].getAttribute("data-src");
+                        images[i].setAttribute("src", imagelink);
+                    }
+                }
+            }
+            
+            function unhideFailedClientSideImage() {
+                unhideSpecificImage("failedcschallpx")                
+            }
+            
+            function unhideFailedInitialisationImage() {
+                unhideSpecificImage("initerrorchallpx")                
+            }
+            
+            function unhideOldImage() {
+                unhideSpecificImage("oldchallpx")                
+            }
+            
+            function unhideFailedClientSideWithErrorImage() {
+                unhideSpecificImage("errorchallpx")                
+            }
+            
+            function unhideBrowserSupport() {
+                unhideOldImage();
+                var challenge = document.querySelector(".challenge");
+                challenge.classList.add("hidden");
+                
+                var challenge = document.querySelector(".oldbrowserproblem");
+                challenge.classList.remove("hidden");
+            }
+            
+            function unhideProblemCreationIssue(err) {
+                window['initialisationFailed'] = true;
+                unhideFailedInitialisationImage();
+                
+                // grab problem div
+                var problem = document.querySelector(".challenge");
+                var title = problem.querySelector(".title")
+                title.innerHTML="Request Verification Initialisation Error";
+                
+                var form = document.querySelector(".captcha-form");
+                form.classList.add("hidden");
+                
+                if (err !== null && err !== undefined) {
+                    var errStack = document.querySelector("#errstack");
+
+                    // hide it
+                    errStack.classList.remove("hidden");
+                    
+                    var browserError = document.querySelector(".browsererror");
+                    browserError.innerHTML = "" + err;
+                }
+                
+                if (window['scriptloaderror']) {
+                    document.querySelector("#browsersupport").classList.remove("hidden");
+                }
+            }
+            
+            function unhideClientErrors() {
+                var clienterror = document.querySelector("#clienterror")
+                    clienterror.innerHTML="<strong>Error(s)</strong>: " + window['turnstileClientErrors'].toString() + "<br/>"
+                    clienterror.classList.remove("hidden");
+            }
+            
+            function unhideProblem(err) {
+                if (window['turnstileClientErrors'].length > 0) {
+                    console.log(window['turnstileClientErrors'])
+                    unhideClientErrors()
+                }
+                // grab problem div
+                var problem = document.querySelector(".challenge");
+                var title = problem.querySelector(".title")
+                if (err===null && err === undefined) {
+                    title.innerHTML="Request Verification Failed";
+                } else {
+                    title.innerHTML="Request Verification Error";
+                }
+                
+                if (err !== null && err !== undefined) {
+                    unhideFailedClientSideWithErrorImage();
+                    var errStack = document.querySelector("#errstack");
+
+                    // hide it
+                    errStack.classList.remove("hidden");
+                    
+                    var browserError = document.querySelector(".browsererror");
+                    browserError.innerHTML = "" + err;
+                } else {
+                    unhideFailedClientSideImage();
+                }
+            }
+            
+            function unhideCss() {
+              var styleCSS = document.createElement("link");
+              styleCSS.rel = "stylesheet";
+              // eslint-disable-next-line
+              styleCSS.href = "https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/25/css/react-header-and-footer/12.0.4/styles.css";
+              // eslint-disable-next-line
+              var styles = ".els-row-center,.els-row-center-fixed,.els-row-content{margin-left:auto;margin-right:auto}@font-face{font-family:NexusSans;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/sans/NexusSansWebPro-Regular.woff) format('woff')}@font-face{font-family:NexusSans;font-weight:700;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/sans/NexusSansWebPro-Bold.woff) format('woff')}@font-face{font-family:NexusSans;font-style:italic;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/sans/NexusSansWebPro-Italic.woff) format('woff')}@font-face{font-family:NexusSans;font-style:italic;font-weight:700;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/sans/NexusSansWebPro-BoldItalic.woff) format('woff')}@font-face{font-family:NexusSerif;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/serif/NexusSerifWebPro-Regular.woff) format('woff')}@font-face{font-family:NexusSerif;font-weight:700;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/serif/NexusSerifWebPro-Bold.woff) format('woff')}@font-face{font-family:NexusSerif;font-style:italic;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/serif/NexusSerifWebPro-Italic.woff) format('woff')}@font-face{font-family:NexusSerif;font-style:italic;font-weight:700;src:url(//sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/3/fonts/nexus/1.0/serif/NexusSerifWebPro-BoldItalic.woff) format('woff')}.e404{min-height: 512px;font-family:NexusSans,Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif}.e404-title{font-size:24px;line-height:32px;color:#fff}@media (min-width:625px){.e404-title{font-size:30px;line-height:40px}}.e404-sugg-title{font-size:20px;line-height:28px}@media (min-width:625px){.e404-sugg-title{font-size:24px;line-height:32px}}.e404-art-title{font-family:NexusSerif,Georgia,serif;font-size:18px;line-height:26px}@media (min-width:625px){.e404-art-title{font-size:20px;line-height:28px}}.e404-msg-para{font-size:18px;line-height:26px}.els-row-center{max-width:1392px}.els-row-content{max-width:1296px}.els-row-center-fixed{max-width:1224px}.els-row-padding{padding-left:8px;padding-right:8px}.els-row-section{padding-bottom:32px;padding-top:32px}.els-row-dark.els-row-center,.els-row-grey.els-row-center,.els-row-white.els-row-center{background:red!important}.els-row-dark,.els-row-grey,.els-row-white{clear:both;padding-left:8px;padding-right:8px;transition:margin .3s}@media (min-width:625px){.e404-msg-para{font-size:20px;line-height:28px}.els-row-dark,.els-row-grey,.els-row-white{padding-left:16px;padding-right:16px}.e404-art-list,.e404-sugg-title{margin-left:8.33%;margin-right:8.33%}}@media (min-width:1121px){.els-row-dark,.els-row-grey,.els-row-white{padding-left:24px;padding-right:24px}}.els-row-transparent{transition:margin .3s}.els-row-dark{background-color:#505050;color:#fff}.els-row-grey{background-color:#f5f5f5}.els-row-white{background-color:#fff}.ctrl-error .els-header-search-toggle{display:none}.e404-art-item,.e404-warning-icon,.is-expanded .qs404-author,.is-expanded .qs404-issue,.is-expanded .qs404-page,.is-expanded .qs404-source,.is-expanded .qs404-volume,.qs404-all{display:inline-block}.e404-art-author{color:#505050}.e404-art-item{font-size:16px;line-height:24px;padding:0 8px 17px;vertical-align:top;list-style:none}@media (min-width:721px){.e404-art-list,.e404-sugg-title{margin-left:16.66%;margin-right:16.66%}.e404-art-list{-webkit-column-count:2;column-count:2;-webkit-column-gap:0;column-gap:0}}.e404-art-source{color:#737373;padding-top:6px}.e404-msg{margin-left:48px;padding:24px 8px 23px}@media (min-width:625px){.e404-msg{margin-left:8.33%;margin-right:8.33%;padding:37px 8px 39px}}@media (min-width:721px){.e404-msg{margin-left:16.66%;margin-right:16.66%}}.e404-msg-link:link{color:#44c6f4;text-decoration:none;border-bottom:2px solid transparent;transition:color .3s ease,border-bottom-color .3s ease}.e404-msg-link:focus,.e404-msg-link:hover{color:#ff8200;border-bottom-color:#ff8200}.e404-msg-para{padding-top:13px;max-width:33em}@media (min-width:625px){.e404-msg-para{padding-top:17px}}.e404-sugg-title{color:#505050;padding:29px 8px 0}@media (min-width:625px){.e404-sugg-title{padding:26px 8px 16px}}.e404-warning-icon{border:2px solid #ff6a5a;color:#ff6a5a;font-size:24px;line-height:24px;margin:0 16px 0 -48px;padding-top:4px;text-align:center;vertical-align:baseline;width:32px}.qs404-cell{padding:4px}.qs404-all{padding-right:44px;width:100%}@media (min-width:625px){.qs404-all{padding-right:4px;width:52%}}@media (min-width:1121px){.qs404-all{width:28%}}.qs404-author{display:none;width:100%}@media (min-width:625px){.qs404-author{display:inline-block;width:48%}}.qs404-button{position:absolute;right:8px;top:14px}.qs404-form{display:block;padding:10px 4px;position:relative}@media (min-width:625px){.qs404-button{right:4px;top:4px}.qs404-form{margin:0 8.33%}}@media (min-width:1121px){.qs404-author{width:20%}.qs404-form{margin:0}}.qs404-input-text{border-radius:0;border:1px solid #b9b9b9;box-shadow:0 0;height:32px;line-height:30px;padding:0 8px 0 6px;width:100%}.qs404-issue{display:none;width:33.333%}.qs404-line2{display:inline-block;height:0}@media (min-width:625px){.qs404-issue{display:inline-block}.qs404-line2{padding-right:40px;position:relative;width:55%}}@media (min-width:1121px){.qs404-line2{width:28%}}@media (max-width:624px){.is-expanded .qs404-line2{height:auto;width:100%}}.qs404-page{display:none;width:33.333%}@media (min-width:625px){.qs404-page{display:inline-block}}.qs404-source{display:none;width:100%}@media (min-width:625px){.qs404-source{display:inline-block;width:45%}}@media (min-width:1121px){.qs404-source{display:inline-block;width:24%}}.qs404-submit{-webkit-appearance:none;background-color:#007398;border:0;color:#fff;height:32px;width:32px}.qs404-submit>svg{position:absolute;left:4px;top:4px}.qs404-toggle{background-color:transparent;border:0;color:#505050;display:block;margin-top:-10px;height:28px;padding:0 0 4px;width:100%}.qs404-toggle>svg{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.qs404-toggle[aria-expanded=true]>svg{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.qs404-volume{display:none;width:33.333%}@media (min-width:625px){.qs404-toggle{display:none}.qs404-volume{display:inline-block}}";
+              var styleSheet = document.createElement("style");
+              styleSheet.innerText = styles;
+              document.head.appendChild(styleCSS);
+              document.head.appendChild(styleSheet);
+            }            
+            
+            function captureErrorCode(errorcode) {
+                if (errorcode !== undefined && errorcode != null) {
+                    window['turnstileClientErrors'].push("(" + errorcode + ")@" + new Date().toISOString())
+                    unhideClientErrors()
+                }
+            }
+
+            function retryTurnstileOrError(reason) {
+                if(window['initialisationFailed']) {
+                    return;
+                }
+                
+                if (isSubmitted()) {
+                    return;
+                }
+                
+                window['turnstileRetry'] = window['turnstileRetry'] + 1
+                try {                    
+                    if (window['turnstileRetry'] <= window['maxRetries']) {
+                        turnstile.reset(widgetid);
+                        turnstile.execute(); 
+                    } else {
+                        unhideProblem(null);
+                    }
+                } catch(error) {
+                    unhideProblem(error);
+                }
+            }
+            
+            function isDefined(data) {
+                if (data === null || typeof data === "undefined") {
+                    return false;
+                }
+                return true;
+            }
+            
+            function renderTurnstile() {
+                widgetid = turnstile.render('#turnstileForm', {
+                    'sitekey': '0x4AAAAAAAIJB5yGm8wJK_4V',
+                    'action' : 'pdf_country_code_mismatch',
+                    'theme': 'light',
+                    'appearance': 'always',
+                    'execution' : 'execute',
+                    'retry-interval': 2000,  
+                    'retry': 'never', 
+                    'refresh-expired': 'manual',
+                    'timeout-callback' : function(errorcode) {
+                        captureErrorCode(errorcode)
+                        retryTurnstileOrError('timeout');
+                    },               
+                    'expired-callback' : function(errorcode) {
+                        captureErrorCode(errorcode)
+                        retryTurnstileOrError('expired');
+                    },               
+                    'error-callback': function(errorcode) {
+                        captureErrorCode(errorcode)
+                        setTimeout( function () {
+                            retryTurnstileOrError('error');
+                        },2000) 
+                    },
+                    'callback': function (token) {
+                        formSubmit();
+                    }
+                });
+            }
+        
+            window.onloadTurnstileCallback = function() {
+                try {
+                    renderTurnstile();
+                    // try again          
+                    if (widgetid === null || widgetid === undefined) {
+                       renderTurnstile() 
+                    } 
+                    if (widgetid === null || widgetid === undefined) {
+                        unhideProblemCreationIssue();
+                    } else {                    
+                        window['turnstileRetry']=0
+                        turnstile.execute();
+                    }
+                } catch (error) {
+                    unhideProblemCreationIssue(error);
+                }
+            }
+            
+            unhideCss();
+            unhideImages();
+            window['maxRetries'] = 2;
+            window['initialisationFailed'] = false;
+            window['turnstileComplete'] = false;
+            window['turnstileClientErrors'] = [];
+            
+            if(window.isIE) {
+                unhideBrowserSupport();
+            } else {
+                try {
+                    turnstile.ready(onloadTurnstileCallback);               
+                } catch (error) {
+                    unhideProblemCreationIssue(error);
+                }
+            }
+        </script>
+    </body>
+    
+</html>
