@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+/* *{
+    border: red solid 2px;
+} */
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a{
+    text-align: center;
+    padding: 35px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    background-color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #19381f;
+    display: grid;
+    grid-template-columns: 150px auto;
+    opacity: 0.6;
+}
+
+#main-page h1{
+    text-align: center;
+    font-family: "Rock Salt", Roboto, Helvetica, sans-serif;
+    color: #89b6a5;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #67597a;
+    color: #fff;
+}
+
+.background-text{
+    text-align: center;
+    padding: 10px;
+}
+
+.background{
+    margin: auto;
+    background-color: #19381f;
+    width: fit-content;
+}
+
+footer{
+    background-color: #67597a;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    color: black;
+    padding: 25px 50px;
+}
+
+footer a{
+    color: black;
+    margin-top: 200px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.logo{
+    width: 80px;
+}
+
+footer p {
+    font-size: 1.2em;
+}    
+ 
+footer p a:hover {
+    text-decoration: underline;
+}
+h2{
+    margin: 0;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+footer .social img{
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
