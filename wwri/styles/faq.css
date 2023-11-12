@@ -29,14 +29,6 @@ header{
     background-color: #19381f;
     display: grid;
     grid-template-columns: 150px auto;
-    opacity: 0.6;
-}
-
-#main-page h1{
-    text-align: center;
-    font-family: "Rock Salt", Roboto, Helvetica, sans-serif;
-    color: #89b6a5;
-    text-align: center;
 }
 
 nav a:hover{
@@ -44,21 +36,31 @@ nav a:hover{
     color: #fff;
 }
 
-.background-text{
-    text-align: center;
-    padding: 10px;
+.background{
+    margin: 10px auto;
+    background-color: #bdadea;
+    text-align: left;
+    width: 75%;
+    border-radius: 4px 10px 4px 10px;
 }
 
-.background{
-    margin: auto;
-    background-color: #19381f;
-    width: fit-content;
+.background p{
+    font-family: "Rock Salt", Roboto, sans-serif, Helvetica;
+    padding: 0 10px 10px 10px;
+    font-size: .8em;
+    color: #19381f;
+}
+
+.background h3{
+    font-family: "Rock Salt", Roboto, sans-serif, Helvetica;
+    padding: 0 10px 0 10px;
+    color: #19381f;
 }
 
 footer{
     background-color: #67597a;
     padding: 25px 50px;
-    margin-top: 200px; 
+    margin-top: 20vh; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,4 +120,5 @@ footer .social img{
     footer {
         margin-top: 25px;
     }
+
 }
