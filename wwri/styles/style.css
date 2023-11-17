@@ -267,7 +267,7 @@ main section img {
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: fit-content;
     /* Form outline */
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 1em;
