@@ -117,6 +117,53 @@ footer p{
     color: #fff;
     text-align: center;
 }
+/* faq section */
+#faq-main p{
+    color: #111;
+}
+#faq-main h1, h2, h3, h4, h5{
+    color: #fff;
+}
+.faq-header{
+    text-align: center;
+    color: black;
+}
+/* accordion */
+.accordion {
+    background-color: #111;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #414141;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #414141;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: fit-content;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+    display: none;
+}
 
 @media screen and (max-width: 900px) {
 
