@@ -121,9 +121,6 @@ footer p{
 #faq-main p{
     color: #111;
 }
-#faq-main h1, h2, h3, h4, h5{
-    color: #fff;
-}
 .faq-header{
     text-align: center;
     color: black;
@@ -131,7 +128,6 @@ footer p{
 /* accordion */
 .accordion {
     background-color: #111;
-    color: #111;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -139,6 +135,10 @@ footer p{
     border: none;
     outline: none;
     transition: 0.4s;
+    font-family: "Rock Salt", Roboto, sans-serif, Helvetica;
+    font-size: 1.17em;
+    color: #fff;
+    font-weight: 300;
 }
 .active, .accordion:hover {
     background-color: #414141;
