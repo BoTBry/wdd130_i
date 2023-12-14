@@ -112,6 +112,9 @@ footer a{
 footer a:hover{
     background-color: #0066ff;
 }
+.contact-footer{
+    margin-top: 230px;
+}
 .social{
     /* text-align: right; */
     margin-left: auto;
